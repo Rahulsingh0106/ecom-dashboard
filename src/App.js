@@ -1,12 +1,17 @@
-import logo from './logo.svg';
+import React from 'react';
 import './App.css';
-import { Button } from 'react-bootstrap';
+import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
+import Registration from './Registeration';
+
+
 function App() {
   return (
     <div className="App">
-      <h1>E-Com Project</h1>
-      <button>Normal</button>
-      <Button>Bootstrap Button</Button>
+      <div className="outer">
+        <div className="inner">
+          <Registration />
+        </div>
+      </div>
     </div>
   );
 }
